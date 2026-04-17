@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Assistenza Clienti – OpenEyes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+ :root {
+      --bg-light: #faf7f2;
+      --bg-lighter: #ffffff;
+      --text-dark: #2f2f2f;
+      --text-muted: #7a7a7a;
+      --gold: #d4b98a;
+      --gold-strong: #c7a873;
+      --shadow-soft: 0 12px 35px rgba(0,0,0,0.08);
+      --radius: 22px;
+}
+
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+}
+
+/* HEADER */
+header {
+      background: #e8dcc7;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+}
+
+nav {
+      max-width: 1250px;
+      margin: auto;
+      padding: 18px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.nav-links a {
+      margin-left: 26px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--gold-strong);
+      font-size: 1rem;
+      position: relative;
+      transition: 0.3s;
+}
+
+.nav-links a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background: var(--gold-strong);
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+      width: 100%;
+}
+
+.social-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      color: var(--gold-strong);
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.social-box:hover {
+      opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--gold-strong);
+  letter-spacing: 1px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 18px auto;
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+/* FORM */
+.form-container {
+  max-width: 750px;
+  margin: auto;
+  background: var(--bg-lighter);
+  padding: 45px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  animation: fadeIn 0.6s ease;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 1.05rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  border: 1px solid #d8d8d8;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--gold-strong);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(199,168,115,0.25);
+}
+
+form textarea {
+  height: 170px;
+  resize: none;
+}
+
+form button {
+  background: var(--gold-strong);
+  color: white;
+  padding: 15px 34px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+form button:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+      background: #e8dcc7;
+      padding: 22px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-top: 50px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 600;
+      font-size: 0.95rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="immagini/titolo.png" alt="Logo OpenEyes" style="height:65px;">
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="chi siamo.html">Chi siamo</a>
+	  <a href="PROVA SERVIZI.html">Servizi</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="bilancio.html">Bilancio Sociale</a>
+    </div>
+
+    <div class="social-box">
+      <img src="immagini/social.png" alt="Instagram" style="width:60px" style="height:60px">
+      <span>Contattaci</span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Assistenza Clienti</h2>
+  <p>Hai bisogno di aiuto? Compila il modulo qui sotto e il nostro team ti risponderà il prima possibile.</p>
+</section>
+
+<section class="form-container">
+
+  <form action="https://formsubmit.co/sara.rebuzzini@iisbachelet.edu.it" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Nuova richiesta di assistenza dal sito OpenEyes">
+
+    <label>Nome e Cognome</label>
+    <input type="text" name="nome" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Oggetto</label>
+    <input type="text" name="oggetto" required>
+
+    <label>Messaggio</label>
+    <textarea name="messaggio" required></textarea>
+
+    <button type="submit">Invia Richiesta</button>
+  </form>
+
+</section>
+
+<footer>
+  © 2026 OpenEyes – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>

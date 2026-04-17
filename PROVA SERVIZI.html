@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Servizi – OpenEyes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+ :root {
+      --bg-light: #faf7f2;
+      --bg-lighter: #ffffff;
+      --text-dark: #3a3a3a;
+      --text-muted: #7a7a7a;
+      --gold: #d4b98a;
+      --gold-strong: #c7a873;
+      --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 20px;
+}
+
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+}
+
+header {
+      background: #e8dcc7;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+}
+
+nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.nav-links a {
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--gold-strong);
+      font-size: 0.95rem;
+      transition: opacity .2s;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--dark);
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: var(--gold);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.social-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      color: var(--gold-strong);
+      cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  color: var(--gold-strong);
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 15px auto;
+  opacity: 0.8;
+}
+
+.services {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.service:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--gold-strong);
+}
+
+.service-text p {
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.service-box {
+  flex: 1;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s;
+  background-color: #efe7d8;
+}
+
+/* IMMAGINI MOSTRATE INTERE (contain) */
+.service:nth-child(1) .service-box {
+  background-image: url("immagini/segnalazioni.jpg");
+  background-size: contain;
+}
+
+.service:nth-child(2) .service-box {
+  background-image: url("immagini/gruppo.jpg");
+  background-size: contain;
+}
+
+/* TARGA — mantiene cover perché va bene così */
+.service:nth-child(3) .service-box {
+  background-image: url("immagini/targa.jpg");
+  background-size: cover;
+}
+
+/* MODALITÀ ACCOMPAGNAMI — immagine verticale */
+.service:nth-child(4) .service-box {
+  background-image: url("immagini/aiuto.jpg");
+  background-size: contain;
+}
+
+.service-box:hover {
+  transform: scale(1.03);
+}
+
+footer {
+      background: #e8dcc7;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-top: 40px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="immagini/titolo.png" alt="Logo OpenEyes" style="height:65px;">
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="chi siamo.html">Chi siamo</a>
+      <a href="prodotti.html">Prodotti</a>
+	  <a href="bilancio.html">Bilancio Sociale</a>
+	  <a href="assistenza.html">Assistenza</a>
+
+    </div>
+
+    <div class="social-box">
+      <img src="immagini/social.png" alt="Instagram" style="width:60px" style="height:60px">
+      <span>Contattaci</span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2><span>I Nostri Servizi</span></h2>
+  <p>
+    In fase iniziale, con un budget di 20.000 euro, abbiamo realizzato una versione base dell’app, dotata di quattro funzionalità principali:
+  </p>
+</section>
+
+<section class="services">
+
+  <div class="service">
+    <div class="service-text">
+      <h3>Segnalazioni in Tempo Reale</h3>
+      <p>
+        Gli utenti possono segnalare aree pericolose o sospette su una mappa condivisa, contribuendo così alla sicurezza collettiva della community.
+      </p>
+    </div>
+    <div class="service-box"></div>
+  </div>
+
+  <div class="service">
+    <div class="service-text">
+      <h3>Controllo del Gruppo</h3>
+      <p>
+         L’app consente di verificare in tempo reale se tutti i membri di un gruppo sono rientrati a casa, offrendo un ulteriore livello di tranquillità.
+      </p>
+    </div>
+    <div class="service-box"></div>
+  </div>
+
+  <div class="service">
+    <div class="service-text">
+      <h3>Controllo Targa</h3>
+      <p>
+        È possibile scansionare la targa di un veicolo e confrontarla con un database aggiornato. In caso di anomalie, viene inviata una notifica immediata all’utente.
+      </p>
+    </div>
+    <div class="service-box"></div>
+  </div>
+
+  <div class="service">
+    <div class="service-text">
+      <h3>Modalità Accompagnami</h3>
+      <p>
+        L’utente può inviare la propria posizione in tempo reale a un altro utente, segnalando il percorso previsto e garantendo un monitoraggio costante fino all’arrivo.
+      </p>
+    </div>
+    <div class="service-box"></div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 OpenEyes – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Prodotti – OpenEyes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+ :root {
+      --bg-light: #faf7f2;
+      --bg-lighter: #ffffff;
+      --text-dark: #2f2f2f;
+      --text-muted: #7a7a7a;
+      --gold: #d4b98a;
+      --gold-strong: #c7a873;
+      --shadow-soft: 0 12px 35px rgba(0,0,0,0.08);
+      --radius: 22px;
+}
+
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+}
+
+/* HEADER */
+header {
+      background: #e8dcc7;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+}
+
+nav {
+      max-width: 1250px;
+      margin: auto;
+      padding: 18px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.nav-links a {
+      margin-left: 26px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--gold-strong);
+      font-size: 1rem;
+      position: relative;
+      transition: 0.3s;
+}
+
+.nav-links a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background: var(--gold-strong);
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+      width: 100%;
+}
+
+.social-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      color: var(--gold-strong);
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.social-box:hover {
+      opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--gold-strong);
+  letter-spacing: 1px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 18px auto;
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+/* GRID PRODOTTI */
+.products-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px 80px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.product-card {
+  background: var(--bg-lighter);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 22px;
+}
+
+.product-info h3 {
+  font-size: 1.4rem;
+  color: var(--gold-strong);
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.product-info button {
+  background: var(--gold-strong);
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-info button:hover {
+  background: var(--gold);
+}
+
+/* FOOTER */
+footer {
+      background: #e8dcc7;
+      padding: 22px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-top: 50px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 600;
+      font-size: 0.95rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="immagini/titolo.png" alt="Logo OpenEyes" style="height:65px;">
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="chi siamo.html">Chi siamo</a>
+      <a href="PROVA SERVIZI.html">Servizi</a>
+      <a href="bilancio.html">Bilancio Sociale</a>
+	  <a href="assistenza.html">Assistenza</a>
+    </div>
+
+    <div class="social-box">
+      <img src="immagini/social.png" alt="Instagram" style="width:60px" style="height:60px">
+      <span>Contattaci</span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>I Nostri Prodotti</h2>
+  <p>Scopri la nostra linea di accessori intelligenti progettati per unire eleganza, sicurezza e tecnologia avanzata.</p>
+</section>
+
+<section class="products-section">
+
+  <div class="products-grid">
+
+    <!-- PRODOTTO 1 -->
+    <div class="product-card">
+      <img src="immagini/prodotto1.jpg" alt="Collana Smart">
+      <div class="product-info">
+        <h3>Bracciale oro OpenEyes</h3>
+        <p>Design elegante con sistema di sicurezza integrato e tracciamento.</p>
+        <button>Scopri di più</button>
+      </div>
+    </div>
+
+    <!-- PRODOTTO 2 -->
+    <div class="product-card">
+      <img src="immagini/prodotto2.jpg" alt="Bracciale Smart">
+      <div class="product-info">
+        <h3>Collana oro OpenEyes</h3>
+        <p>Un accessorio raffinato che combina stile e protezione personale avanzata.</p>
+        <button>Scopri di più</button>
+      </div>
+    </div>
+
+    <!-- PRODOTTO 3 -->
+    <div class="product-card">
+      <img src="immagini/prodotto3.jpg" alt="Portachiavi Smart">
+      <div class="product-info">
+        <h3>Bracciale argento OpenEyes</h3>
+        <p>Il portachiavi intelligente che ti permette di monitorare ciò che ami.</p>
+        <button>Scopri di più</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 OpenEyes – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>

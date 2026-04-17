@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Obiettivi – OpenEyes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+ :root {
+      --bg-light: #faf7f2;
+      --bg-lighter: #ffffff;
+      --text-dark: #3a3a3a;
+      --text-muted: #7a7a7a;
+      --gold: #d4b98a;
+      --gold-strong: #c7a873;
+      --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 20px;
+}
+
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+}
+
+header {
+      background: #e8dcc7;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+}
+
+nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.nav-links a {
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--gold-strong);
+      font-size: 0.95rem;
+      transition: opacity .2s;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--dark);
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: var(--gold);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.social-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      color: var(--gold-strong);
+      cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  color: var(--gold-strong);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 15px auto;
+  opacity: 0.8;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.goal-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.goal-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.goal-text {
+  flex: 2;
+}
+
+.goal-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--gold-strong);
+}
+
+.goal-text p {
+  line-height: 1.6;
+  opacity: 0.9;
+  white-space: pre-line;
+}
+
+.goal-img {
+  flex: 1;
+}
+
+.goal-img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: var(--shadow-soft);
+}
+
+footer {
+      background: #e8dcc7;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-top: 40px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="immagini/titolo.png" alt="Logo OpenEyes" style="height:65px;">
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="chi siamo.html">Chi siamo</a>
+      <a href="PROVA SERVIZI.html">Servizi</a>
+	  <a href="prodotti.html">Prodotti</a>
+	  <a href="assistenza.html">Assistenza</a>
+    </div>
+
+    <div class="social-box">
+	  <img src="immagini/social.png" alt="Instagram" style="width:60px" style="height:60px">
+      <span>Contattaci</span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2><span>I Nostri Obiettivi</span></h2>
+  <p>
+    OpenEyes contribuisce a diversi Obiettivi di Sviluppo Sostenibile, con particolare attenzione ai Goal 12, 5 e 11.
+  </p>
+</section>
+
+<section class="section-container">
+
+  <div class="goal-block">
+    <div class="goal-text">
+      <h3>GOAL 12: CONSUMO E PRODUZIONE RESPONSABILI</h3>
+      <p>Garantire modelli sostenibili di produzione e di consumo
+2.5 Entro il 2030, ridurre in modo sostanziale la produzione di rifiuti attraverso la prevenzione, la riduzione, il riciclaggio e il riutilizzo
+
+12.b Sviluppare e applicare strumenti per monitorare gli impatti di sviluppo sostenibile per il turismo sostenibile, che crei posti di lavoro e promuova la cultura e i prodotti locali</p>
+    </div>
+
+    <div class="goal-img">
+      <img src="immagini/goal12.png" alt="Goal 12">
+    </div>
+  </div>
+
+  <div class="goal-block">
+    <div class="goal-text">
+      <h3>GOAL 5: PARITÁ DI GENERE</h3>
+      <p>Raggiungere l'uguaglianza di genere e l'empowerment
+(maggiore forza, autostima e consapevolezza) di tutte le donne e le ragazze
+5.1 Porre fine a ogni forma di discriminazione nei confronti di tutte le donne, bambine e ragazze in ogni parte del mondo
+5.2 Eliminare ogni forma di violenza contro tutte le donne, bambine e ragazze nella sfera pubblica e privata, incluso il traffico a fini di prostituzione, lo sfruttamento sessuale e altri tipi di sfruttamento
+5.b Migliorare l'uso della tecnologia che può aiutare il lavoro delle donne, in particolare la tecnologia dell'informazione e della comunicazione, per promuovere l'empowerment, ossia la forza, l'autostima, la consapevolezza delle donne</p>
+    </div>
+
+    <div class="goal-img">
+      <img src="immagini/goal5.jpg" alt="Goal 5">
+    </div>
+  </div>
+
+  <div class="goal-block">
+    <div class="goal-text">
+      <h3>GOAL 11: CITTÀ E COMUNITÀ SOSTENIBILI</h3>
+      <p>Rendere le città e gli insediamenti umani inclusivi, sicuri, duraturi e sostenibili
+11.7 Entro il 2030, fornire l'accesso universale a spazi verdi pubblici sicuri, inclusivi e accessibili, in particolare per le donne e i bambini, gli anziani e le persone con disabilità
+11.3 Entro il 2030, aumentare l’urbanizzazione inclusiva e sostenibile e la capacità di pianificazione e gestione partecipata e integrata dell’insediamento umano in tutti i paesi
+11.b Entro il 2020, aumentare notevolmente il numero di città e di insediamenti umani che adottino e attuino politiche e piani integrati verso l'inclusione, l'efficienza delle risorse, la mitigazione e l'adattamento ai cambiamenti climatici, la resilienza ai disastri, lo sviluppo e l’implementazione, in linea con il “Quadro di Sendai per la Riduzione del Rischio di Disastri 2015-2030”[1], la gestione complessiva del rischio di catastrofe a tutti i livelli</p>
+    </div>
+
+    <div class="goal-img">
+      <img src="immagini/goal11.jpg" alt="Goal 11">
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 OpenEyes – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
