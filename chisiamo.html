@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi Siamo – OpenEyes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg-light: #faf7f2;
+      --bg-lighter: #ffffff;
+      --text-dark: #3a3a3a;
+      --text-muted: #7a7a7a;
+      --gold: #d4b98a;
+      --gold-strong: #c7a873;
+      --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 20px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: #e8dcc7;
+      box-shadow: var(--shadow-soft);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links a {
+      margin-left: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--gold-strong);
+      font-size: 0.95rem;
+      transition: opacity .2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.7;
+    }
+
+    .social-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      color: var(--gold-strong);
+      cursor: pointer;
+    }
+
+    .social-box img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .about-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    .about-title {
+      text-align: center;
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: var(--text-dark);
+    }
+
+    .about-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .about-block img {
+      width: 55%; 
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      border: 8px solid white; 
+      display: block;
+      margin: auto;
+    }
+
+
+    .about-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: var(--gold-strong);
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .reverse {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 900px) {
+      .about-block {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .reverse {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      background: #e8dcc7;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-dark);
+      margin-top: 40px;
+      box-shadow: var(--shadow-soft);
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="immagini/titolo.png" alt="Logo OpenEyes" style="height:65px;">
+    </div>
+
+    <div class="nav-links">
+  <a href="index.html">Home</a>
+      <a href="PROVA SERVIZI.html">Servizi</a>
+      <a href="prodotti.html">Prodotti</a>
+	  <a href="bilancio.html">Bilancio Sociale</a>
+	  <a href="assistenza.html">Assistenza</a>
+    </div>
+
+    <div class="social-box">
+      <img src="immagini/social.png" alt="Instagram" style="width:60px" style="height:60px">
+      <span>Contattaci</span>
+    </div>
+  </nav>
+</header>
+
+
+
+<section class="about-section">
+
+  <h1 class="about-title">La nostra identità, la tua sicurezza</h1>
+
+  
+  <div class="about-block">
+    <img src="immagini/vittoria.png" alt="Design raffinato">
+    <div class="about-text">
+      <h2>Vittoria Ricci - CEO</h2>
+      <p>
+        Vittoria è stata scelta per le sue ottime capacità organizzative, la leadership naturale e la capacità di motivare il gruppo. 
+		Il suo ruolo consiste nel coordinare le attività, prendere decisioni strategiche e garantire che il progetto proceda in modo efficace, 
+		rispettando le esigenze di tutti gli stakeholder.
+      </p>
+    </div>
+  </div>
+  
+  <div class="about-block reverse">
+    <div class="about-text">
+      <h2>Safaa Elkassabi - Direttrice Operativa</h2>
+      <p>
+        Safaa collabora con l’Amministratore Delegato nella gestione dell’impresa, assicurandosi che tutte le scadenze vengano rispettate e le decisioni attuate. 
+		Opera con accuratezza, impegno e professionalità, favorendo il buon funzionamento del team.
+      </p>
+    </div>
+    <img src="immagini/safaa.png" alt="Missione sicurezza">
+  </div>
+
+  <div class="about-block">
+    <img src="immagini/nansa.png" alt="Artigianalità">
+    <div class="about-text">
+      <h2>Nansa Cissokho - Manager Marketing</h2>
+      <p>Nansa si occupa della definizione delle strategie di marketing in linea con il target di riferimento, analizzando il mercato e individuando le soluzioni più efficaci per la promozione del prodotto. 
+         Cura inoltre la pianificazione delle attività comunicative, contribuendo a valorizzare l’immagine del progetto in modo creativo e coerente.
+      </p>
+    </div>
+  </div>
+  
+  <div class="about-block reverse">
+    <div class="about-text">
+      <h2>Sofia Campanella - Manager Risorse Umane</h2>
+      <p>Sofia si dedica allo sviluppo delle competenze dei collaboratori, stimolando costantemente la loro motivazione. 
+          Gestisce la crescita del team e ne rafforza l’equilibrio e la collaborazione, con l’obiettivo di promuovere il benessere dei manager e ottenere risultati concreti e di valore.
+      </p>
+    </div>
+    <img src="immagini/sofia.png" alt="Tecnologia integrata">
+  </div>
+
+</section>
+
+
+
+<footer>
+  © 2026 OpenEyes – Tutti i diritti riservati
+</footer>
+
+</body>
